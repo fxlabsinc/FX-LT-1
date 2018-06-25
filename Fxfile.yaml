@@ -78,7 +78,7 @@ environments:
 
 # Job profiles
 jobs:
-  - name: Stg
+  - name: Test
     # refers the the env defined above
     environment: Stg
     tags:
@@ -87,7 +87,7 @@ jobs:
     regions: FXLabs/US_WEST_1
     # 0 15 10 ? * * -> Fire at 10:15am every day
     cron: '0 15 10 ? * *'
-    #issueTracker: FxLabs/Stg-GitHub-Bot
+    issueTracker: LeanTaas/LT-GitHub
 #  - name: SANDBOX
 #    environment: Stg
 #    tags:
