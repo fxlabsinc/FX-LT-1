@@ -1,0 +1,22 @@
+---
+parent: "api_unit_unitid_live-date"
+name: "api_unit_unitid_live-date_get_path_param_specialcharacter_unitId"
+description: "get the live date of a unit"
+type: "SUITE"
+endpoint: "/api/unit/!@#$%^&*()/live-date"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Bug"
+severity: "Major"
+inactive: false
+policies: null
