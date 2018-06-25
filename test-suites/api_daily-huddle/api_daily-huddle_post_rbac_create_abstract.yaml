@@ -1,0 +1,32 @@
+---
+parent: "api_daily-huddle"
+name: "api_daily-huddle_post_rbac_create_abstract"
+description: "obtains data points for daily huddle plot"
+type: "ABSTRACT"
+endpoint: "/api/daily-huddle"
+method: "POST"
+auth: ""
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"unitId\":\"{{@Random | 8}}\",\"parentUnitId\":\"{{@Random | 8}}\",\"unitCode\"\
+    :\"{{@Random | 8}}\",\"unitName\":\"{{@Random | 8}}\",\"shiftType\":\"{{@Random\
+    \ | 8}}\",\"fromDateTime\":\"{{@DateTime}}\",\"toDateTime\":\"{{@DateTime}}\"\
+    ,\"date\":\"{{@DateTime}}\",\"yesterday\":\"{{@Random | 8}}\",\"isHuddleReportRequest\"\
+    :false,\"activeTemplateId\":\"{{@Random | 8}}\",\"schedulingInterval\":\"{{@RandomInteger}}\"\
+    ,\"priorToLive\":false,\"primaryNursing\":false,\"primaryNursingField\":\"{{@Random\
+    \ | 8}}\",\"sqlParamMap\":null,\"apptDateLD\":\"{{@Date}}\",\"jsonMap\":null,\"\
+    apptDate\":\"{{@Random | 8}}\"}"
+  inactive: false
+assertions:
+- "@StatusCode == 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: null
+severity: null
+inactive: true
+policies: null
