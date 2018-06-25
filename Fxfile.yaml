@@ -84,7 +84,7 @@ jobs:
     tags:
       - V1
     # Bot region
-    regions: FXLabs/US-WEST-1
+    regions: FXLabs/US_WEST_1
     # 0 15 10 ? * * -> Fire at 10:15am every day
     cron: '0 15 10 ? * *'
     #issueTracker: FxLabs/Stg-GitHub-Bot
