@@ -1,0 +1,30 @@
+---
+parent: "api_unit_unitid_live-date"
+name: "api_unit_unitid_live-date_get_path_param_sql_injection_MySQL_unitId"
+description: "get the live date of a unit"
+type: "SUITE"
+endpoint: "/api/unit/{unitId}/live-date"
+method: "GET"
+auth: "Default"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode != 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: "Security_SQL_Injection"
+severity: "Major"
+inactive: false
+policies:
+  initExec: "Request"
+  cleanupExec: "Request"
+  logger: "DEBUG"
+  timeoutSeconds: 300
+  repeatOnFailure: 0
+  repeat: 0
+  repeatModule: "'@MySQLSQLInjections'"
+  repeatDelay: 0
