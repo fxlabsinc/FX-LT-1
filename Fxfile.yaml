@@ -39,9 +39,9 @@ environments:
       - name: Default
         # authType: Basic, OAuth_2_0, Token
         authType: Token
-        header_1: 'JWTTOKEN={{@Vault.FxLabs/Stg-Admin-Pass}}'
+        header_1: 'JWTTOKEN={{@Vault.FXLabs/LeanTaasToken}}'
         # Inject password from FX Vault
-        #password: '{{@Vault.FXLabs/LeanTaasToken}}'
+        #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
 #     - name: QE
 #       # base URL
 #       baseUrl: http://qe.fxlabs.io/api/v1
