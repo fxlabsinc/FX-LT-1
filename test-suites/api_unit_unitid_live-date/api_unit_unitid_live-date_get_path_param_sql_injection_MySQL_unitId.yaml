@@ -11,7 +11,7 @@ headers:
 - "Content-Type: application/json"
 testCases: []
 assertions:
-- "@Response.status == 'FAILURE'"
+- "@Response.status == FAILURE"
 tags:
 - "V1"
 authors:
