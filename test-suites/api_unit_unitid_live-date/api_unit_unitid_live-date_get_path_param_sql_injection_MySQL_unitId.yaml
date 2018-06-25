@@ -11,7 +11,7 @@ headers:
 - "Content-Type: application/json"
 testCases: []
 assertions:
-- "@StatusCode != 200"
+- "@Response.status == 'FAILURE'"
 tags:
 - "V1"
 authors:
