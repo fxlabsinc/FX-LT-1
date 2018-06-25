@@ -3,7 +3,7 @@ parent: "api_unit_unitid_live-date"
 name: "api_unit_unitid_live-date_get_path_param_sql_injection_MySQL_unitId"
 description: "get the live date of a unit"
 type: "SUITE"
-endpoint: "/api/unit/{unitId}/live-date?unitId={{@MySQLSQLInjections}}"
+endpoint: "/api/unit/123/live-date?unitId={{@MySQLSQLInjections}}"
 method: "GET"
 auth: "BASIC"
 headers:
@@ -22,7 +22,7 @@ inactive: false
 policies:
   initExec: "Request"
   cleanupExec: "Request"
-  logger: "ERROR"
+  logger: "DEBUG"
   timeoutSeconds: 300
   repeatOnFailure: 0
   repeat: 0
