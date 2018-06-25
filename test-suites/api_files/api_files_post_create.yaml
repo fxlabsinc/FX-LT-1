@@ -5,7 +5,7 @@ description: "Get all files (getAllFiles)"
 type: "SUITE"
 endpoint: "/api/files"
 method: "POST"
-auth: ""
+auth: "Default"
 headers:
 - "Accept: application/json"
 - "Content-Type: application/json"
