@@ -16,7 +16,7 @@ assertions:
   #- "@ResponseSize < 1024" # bytes
 
 tags:
-  - V2
+  - V1
 
 policies:
   logger: DEBUG
