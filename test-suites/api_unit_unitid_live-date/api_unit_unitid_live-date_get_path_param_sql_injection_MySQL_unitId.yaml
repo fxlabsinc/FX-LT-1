@@ -5,7 +5,7 @@ description: "get the live date of a unit"
 type: "SUITE"
 endpoint: "/api/unit/123/live-date?unitId={{@MySQLSQLInjections}}"
 method: "GET"
-auth: "BASIC"
+auth: "Default"
 headers:
 - "Accept: application/json"
 - "Content-Type: application/json"
