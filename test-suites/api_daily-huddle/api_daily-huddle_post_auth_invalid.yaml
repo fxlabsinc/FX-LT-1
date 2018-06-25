@@ -1,0 +1,22 @@
+---
+parent: "api_daily-huddle"
+name: "api_daily-huddle_post_auth_invalid"
+description: "obtains data points for daily huddle plot"
+type: "SUITE"
+endpoint: "/api/daily-huddle"
+method: "POST"
+auth: "INVALID_AUTH"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases: []
+assertions:
+- "@StatusCode == 401"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+category: null
+severity: null
+inactive: false
+policies: null
