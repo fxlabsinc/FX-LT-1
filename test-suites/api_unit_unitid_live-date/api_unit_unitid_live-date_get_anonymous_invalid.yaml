@@ -13,7 +13,7 @@ testCases: []
 assertions:
 - "@StatusCode == 401"
 tags:
-- "V1"
+- "V2"
 authors:
 - "FX Bot"
 category: null
