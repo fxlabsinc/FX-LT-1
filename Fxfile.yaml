@@ -43,6 +43,9 @@ environments:
         header_1: 'cookie: JWTTOKEN=eyJhbGciOiJIUzI1NiJ9.eyJBY2NvdW50Ijp7InVzZXJOYW1lIjoiYWhtYWQueS5lbWFpbDAxIiwiZmlyc3ROYW1lIjoiQWhtYWQiLCJsYXN0TmFtZSI6Illhc3NpbiIsImVtYWlsSWQiOiJhaG1hZC55K2VtYWlsMDFAbGVhbnRhYXMuY29tIiwic2VydmljZXMiOlt7Im5hbWUiOiJoZXJtZXMiLCJvcmdhbml6YXRpb25zIjpbeyJuYW1lIjoiZGVmYXVsdCIsInJvbGVzIjpbIlJFR1VMQVJfVVNFUiJdfV19LHsibmFtZSI6ImlxdWV1ZSIsIm9yZ2FuaXphdGlvbnMiOlt7Im5hbWUiOiJvcmdfc2Nyb2xsMTAiLCJyb2xlcyI6WyJsdF9hZG1pbl9yb2xlIl19XX1dfSwiVG9rZW5JZCI6IjQ5ZTU1YzcxLTdkMjEtNDhkYy05NjhjLTcwYjU3YWM5NjBjZSIsInN1YiI6ImFobWFkLnkuZW1haWwwMSJ9.0lS-22AhIhCC5VtKkByLgUcN_GWP9WXEe_KuH3CMD5c'
         # Inject password from FX Vault
         #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
+      - name: INVALID_AUTH
+        authType: Token
+        header_1: 'cookie: JWTTOKEN=invalidiOiJIUzI1NiJ9.eyJBY2NvdW50Ijp7InVzZXJOYW1lIjoiYWhtYWQueS5lbWFpbDAxIiwiZmlyc3ROYW1lIjoiQWhtYWQiLCJsYXN0TmFtZSI6Illhc3NpbiIsImVtYWlsSWQiOiJhaG1hZC55K2VtYWlsMDFAbGVhbnRhYXMuY29tIiwic2VydmljZXMiOlt7Im5hbWUiOiJoZXJtZXMiLCJvcmdhbml6YXRpb25zIjpbeyJuYW1lIjoiZGVmYXVsdCIsInJvbGVzIjpbIlJFR1VMQVJfVVNFUiJdfV19LHsibmFtZSI6ImlxdWV1ZSIsIm9yZ2FuaXphdGlvbnMiOlt7Im5hbWUiOiJvcmdfc2Nyb2xsMTAiLCJyb2xlcyI6WyJsdF9hZG1pbl9yb2xlIl19XX1dfSwiVG9rZW5JZCI6IjQ5ZTU1YzcxLTdkMjEtNDhkYy05NjhjLTcwYjU3YWM5NjBjZSIsInN1YiI6ImFobWFkLnkuZW1haWwwMSJ9.0lS-22AhIhCC5VtKkByLgUcN_GWP9WXEe_KuH3CMD5c'
 #     - name: QE
 #       # base URL
 #       baseUrl: http://qe.fxlabs.io/api/v1
