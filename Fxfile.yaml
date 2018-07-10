@@ -87,8 +87,16 @@ jobs:
     regions: FXLabs/US_WEST_1
     # 0 15 10 ? * * -> Fire at 10:15am every day
     cron: '0 15 10 ? * *'
-    issueTracker: LeanTaas/LT-GitHub
-#  - name: SANDBOX
-#    environment: Stg
-#    tags:
-#      - SANDBOX
+    issueTracker: 
+      name: Dev-IssueTracker
+      # e.g. https://github.com/shoukathmd/courseapo
+      url: <<changeme>>
+      account: Default_GitHub
+    notifications: 
+      - name: Dev-Slack-Notification
+        channel: <<changeme>>
+        account: Default_Slack
+      - name: Dev-Email-Notification
+        # enter your email
+        to: <<changeme>>
+        account: Default_Email
